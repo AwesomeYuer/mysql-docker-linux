@@ -20,13 +20,13 @@ sudo docker run \
 
 
 
-    docker run --name microshaoft-mysql -p 3306:3306 -v /var/lib/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=withoutpassword mysql:latest
+    docker run --name microshaoft-mysql -p 3306:3306 -v /var/lib/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=!@#123QWE mysql:latest
 
 
 
-    docker run --name microshaoft-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=withoutpassword mysql:microshaoft
+    docker run --name microshaoft-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=!@#123QWE mysql:microshaoft
 
-    alter user root@localhost identified with mysql_native_password by 'passwordwithout'
+    alter user root@localhost identified with mysql_native_password by '!@#123QWE'
 
 
     set global default_authentication_plugin='mysql_native_password'
